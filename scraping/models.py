@@ -20,8 +20,7 @@ class City(models.Model):
 
 
 class Language(models.Model):
-    name = models.CharField(max_length=50,
-                            verbose_name='Язык програмирования', unique=True)
+    name = models.CharField(max_length=50, verbose_name='Язык програмирования', unique=True)
     slug = models.CharField(max_length=50, blank=True, unique=True)
 
     class Meta:

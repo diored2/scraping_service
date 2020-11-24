@@ -18,7 +18,6 @@ from django.urls import path, include
 from scraping.views import home_view
 
 urlpatterns = [
-    path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
     path('home/', home_view),
 ]
